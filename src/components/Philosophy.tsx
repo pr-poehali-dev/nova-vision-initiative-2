@@ -5,16 +5,34 @@ export function Philosophy() {
       <section id="about" className="py-32 lg:py-40 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="relative aspect-[4/5] bg-sand overflow-hidden">
-              {/* Участницы на сцене с жюри — атмосфера конкурса */}
-              <img
-                src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/a87ea2bb-cfbb-4b0e-aa26-2eaab266cce6.jpg"
-                alt="Участницы конкурса на сцене"
-                className="absolute inset-0 w-full h-full object-cover object-top"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-foreground/70 p-6">
-                <p className="font-serif text-xl text-primary-foreground">Конкурс красоты · 2025</p>
-                <p className="text-xs tracking-widest uppercase text-primary-foreground/70 mt-1">Предыдущий сезон · Саранск</p>
+            {/* Коллаж из двух фото */}
+            <div className="grid grid-cols-2 gap-3">
+              {/* Большое фото — участницы с цветами */}
+              <div className="relative col-span-2 aspect-[16/9] overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/585ce417-0642-4320-bfd1-d679b7f89523.jpg"
+                  alt="Участницы конкурса Красавица города"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/70 to-transparent p-5">
+                  <p className="font-serif text-lg text-primary-foreground">Участницы · Сезон 2025</p>
+                </div>
+              </div>
+              {/* Маленькое — участницы на сцене с жюри */}
+              <div className="relative aspect-square overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/a87ea2bb-cfbb-4b0e-aa26-2eaab266cce6.jpg"
+                  alt="Участницы на сцене"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              {/* Маленькое — жюри */}
+              <div className="relative aspect-square overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/e7a89998-4450-452b-8ffd-af87005543e7.jpg"
+                  alt="Жюри конкурса"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
 
@@ -89,25 +107,11 @@ export function Philosophy() {
             </div>
           </div>
 
-          {/* Фото жюри + цитата */}
-          <div className="mt-12 grid md:grid-cols-2 gap-px bg-border">
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <img
-                src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/e7a89998-4450-452b-8ffd-af87005543e7.jpg"
-                alt="Жюри конкурса"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-foreground/30" />
-              <div className="absolute bottom-4 left-4">
-                <p className="text-xs tracking-widest uppercase text-primary-foreground/70">Профессиональное жюри</p>
-              </div>
-            </div>
-            <div className="bg-foreground p-10 flex flex-col justify-center">
-              <p className="text-xs tracking-[0.3em] uppercase text-primary-foreground/60 mb-4">Почему это выгодно спонсорам</p>
-              <p className="font-serif text-xl md:text-2xl font-light leading-relaxed text-primary-foreground">
-                Аудитория конкурса — это люди, которые принимают решения о покупке и влияют на выбор окружающих. Ваш бренд появляется перед ними в момент праздника.
-              </p>
-            </div>
+          <div className="mt-12 p-10 bg-foreground text-primary-foreground">
+            <p className="text-xs tracking-[0.3em] uppercase text-primary-foreground/60 mb-4">Почему это выгодно спонсорам</p>
+            <p className="font-serif text-2xl md:text-3xl font-light leading-relaxed">
+              Аудитория конкурса — это люди, которые принимают решения о покупке и влияют на выбор окружающих. Ваш бренд появляется перед ними в момент праздника и эмоционального подъёма.
+            </p>
           </div>
         </div>
       </section>
