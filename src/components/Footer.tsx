@@ -14,7 +14,7 @@ export function Footer() {
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
             <nav className="flex flex-col gap-3">
               <a href="#about" className="text-sm text-foreground hover:text-sage transition-colors">О мероприятии</a>
-              <a href="#audience" className="text-sm text-foreground hover:text-sage transition-colors">Аудитория</a>
+              <a href="#benefits" className="text-sm text-foreground hover:text-sage transition-colors">Выгоды</a>
               <a href="#packages" className="text-sm text-foreground hover:text-sage transition-colors">Пакеты</a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">Контакты</a>
             </nav>

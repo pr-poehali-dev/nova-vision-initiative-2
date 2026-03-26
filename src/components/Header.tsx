@@ -19,10 +19,10 @@ export function Header() {
               О мероприятии
             </a>
             <a
-              href="#audience"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
+              href="#benefits"
+              className="text-sm tracking-widests uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
-              Аудитория
+              Выгоды
             </a>
             <a
               href="#packages"
@@ -52,7 +52,7 @@ export function Header() {
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? "max-h-64 pb-8" : "max-h-0"}`}>
           <div className="flex flex-col gap-6 pt-4">
             <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">О мероприятии</a>
-            <a href="#audience" onClick={() => setIsMenuOpen(false)} className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Аудитория</a>
+            <a href="#benefits" onClick={() => setIsMenuOpen(false)} className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Выгоды</a>
             <a href="#packages" onClick={() => setIsMenuOpen(false)} className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Пакеты</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </div>

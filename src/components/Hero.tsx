@@ -5,7 +5,7 @@ export function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8">
-          Коммерческое предложение · Огарев Арена · Саранск · 2026
+          Коммерческое предложение для спонсоров · Саранск · 2026
         </p>
 
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.1] tracking-tight text-foreground mb-8 text-balance">
@@ -13,8 +13,11 @@ export function Hero() {
           <span className="block text-sage">города 2026</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
-          Эксклюзивное предложение для партнёров и спонсоров главного конкурса красоты Республики Мордовия
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
+          Главный конкурс красоты Республики Мордовия возвращается — грандиознее, чем когда-либо. 13 участниц, живая музыка от звёздного артиста и более 3 000 гостей в зале.
+        </p>
+        <p className="text-sm text-terracotta tracking-widest uppercase mb-12">
+          11 июля 2026 · Огарев Арена · Саранск
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

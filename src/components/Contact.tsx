@@ -23,10 +23,13 @@ export function Contact() {
               Стать партнёром
             </p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-balance">
-              Обсудим сотрудничество?
+              Станьте частью события
             </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
+              «Красавица города 2026» — редкая возможность поставить ваш бренд рядом с главным летним событием Саранска. Места ограничены: для каждого уровня партнёрства — один слот.
+            </p>
             <p className="text-muted-foreground leading-relaxed mb-12 max-w-md">
-              Оставьте заявку, и мы свяжемся с вами в течение одного рабочего дня для обсуждения деталей партнёрства.
+              Оставьте заявку, и мы свяжемся с вами в течение одного рабочего дня для обсуждения условий.
             </p>
 
             <div className="space-y-6">
