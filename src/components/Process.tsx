@@ -39,9 +39,21 @@ export function Process() {
                 Что вы
                 <span className="italic"> получаете</span>
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-8">
                 Участие в «Красавице города 2026» — это не просто логотип на баннере. Это живое присутствие бренда внутри события, которое обсуждают, снимают и помнят.
               </p>
+              {/* Фото зрителей с огнями телефонов — эмоция и вовлечённость */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/e57f827e-77ec-4cdf-8e3a-2289754c5bec.jpg"
+                  alt="Зрители на мероприятии"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-foreground/20" />
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-xs tracking-widest uppercase text-primary-foreground/80">Атмосфера события</p>
+                </div>
+              </div>
             </div>
           </div>
 

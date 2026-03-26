@@ -164,8 +164,20 @@ export function Services() {
               </div>
             </div>
 
-            {/* Визуал афиши */}
-            <div className="relative">
+            {/* Фото выступления группы на сцене */}
+            <div className="relative flex flex-col gap-4">
+              <div className="relative aspect-video overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/ebfa2bf5-17dd-476d-87cf-c3433e473ba6.jpg"
+                  alt="Выступление артиста на сцене"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-foreground/30" />
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-xs tracking-widest uppercase text-primary-foreground/70">Живая сцена · Саранск</p>
+                </div>
+              </div>
+
               <div className="aspect-[3/4] border border-primary-foreground/20 flex flex-col items-center justify-between p-12 text-center">
                 <div>
                   <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/50 mb-6">Саранск · Огарев Арена</p>
