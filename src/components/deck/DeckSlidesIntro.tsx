@@ -15,14 +15,14 @@ export default function DeckSlidesIntro({ current }: Props) {
               <span className="italic text-sage">которое запоминается</span>
             </h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
-              <p>«Красавица города 2026» — ежегодный конкурс красоты и таланта, главное культурное событие Республики Мордовия. 13 финалисток соревнуются за титул символа Саранска.</p>
+              <p>«Саранская красавица 2026» — ежегодный конкурс красоты и таланта, главное культурное событие Республики Мордовия. 13 финалисток соревнуются за титул символа Саранска.</p>
               <p>Мероприятие объединяет бизнес-элиту, медиа и самую активную аудиторию региона в торжественной атмосфере Огарев Арены.</p>
             </div>
             <div className="mt-10 grid grid-cols-3 gap-6">
               {[
                 { val: "13", label: "Финалисток" },
                 { val: "3 000+", label: "Гостей в зале" },
-                { val: "6+", label: "Лет истории" },
+                { val: "3", label: "Года мероприятию" },
               ].map((s) => (
                 <div key={s.label} className="border-l-2 border-terracotta pl-4">
                   <p className="font-serif text-2xl font-semibold text-foreground">{s.val}</p>
@@ -51,10 +51,10 @@ export default function DeckSlidesIntro({ current }: Props) {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
-              { val: "100 000+", label: "Совокупный охват", desc: "Соцсети + СМИ + трансляция", color: "border-rose" },
+              { val: "100 000+", label: "Совокупный охват", desc: "Соцсети и региональные СМИ", color: "border-rose" },
               { val: "3 000+", label: "Гостей в зале", desc: "Живая аудитория 11 июля", color: "border-gold" },
-              { val: "50 000+", label: "Онлайн-зрителей", desc: "Прямая трансляция шоу", color: "border-sage" },
-              { val: "60%", label: "Женщины 25–45", desc: "Ключевой демографический срез", color: "border-indigo" },
+              { val: "18–55", label: "Возраст аудитории", desc: "Мужчины и женщины", color: "border-sage" },
+              { val: "60%", label: "Женщины", desc: "Ключевой демографический срез", color: "border-indigo" },
             ].map((m) => (
               <div key={m.label} className={`p-6 border-t-2 ${m.color} bg-sand/30`}>
                 <p className="font-serif text-3xl font-semibold text-foreground mb-2">{m.val}</p>
@@ -67,7 +67,7 @@ export default function DeckSlidesIntro({ current }: Props) {
             {[
               { title: "Бизнес-аудитория", items: ["Руководители компаний", "Предприниматели Мордовии", "Региональные топ-менеджеры"] },
               { title: "Медиа и инфлюенсеры", items: ["Журналисты региональных СМИ", "Lifestyle-блогеры", "ТВ и радио персоны"] },
-              { title: "Широкая аудитория", items: ["Активные женщины 25–45 лет", "Студенты и молодёжь", "Семьи и гости города"] },
+              { title: "Широкая аудитория", items: ["Активные женщины и мужчины 18–55 лет", "Студенты и молодёжь", "Семьи и гости города"] },
             ].map((seg) => (
               <div key={seg.title} className="p-6 border border-border">
                 <p className="font-serif text-lg text-foreground mb-4">{seg.title}</p>
@@ -99,21 +99,21 @@ export default function DeckSlidesIntro({ current }: Props) {
                 title: "Бренд-видимость",
                 color: "text-gold",
                 bar: "bg-gold",
-                items: ["Логотип на сцене и баннерах Огарев Арены", "Брендирование пресс-волла и фотозоны", "3 000+ фотографий гостей с вашим брендом", "Упоминание ведущим со сцены"],
+                items: ["Логотип на сцене и баннерах Огарев Арены", "Брендирование пресс-волла и фотозоны", "Упоминание ведущим со сцены"],
               },
               {
                 num: "02",
                 title: "Digital KPI / ROI",
                 color: "text-rose",
                 bar: "bg-rose",
-                items: ["100 000+ охват в соцсетях и СМИ", "Интеграция в прямую трансляцию", "Видеоролик и фотоотчёт для бренда", "Аналитика упоминаний после события"],
+                items: ["100 000+ охват в соцсетях и СМИ", "Видеоролик и фотоотчёт для бренда", "Аналитика упоминаний после события"],
               },
               {
                 num: "03",
                 title: "PR-активности",
                 color: "text-indigo",
                 bar: "bg-indigo",
-                items: ["Публикации в региональных СМИ", "Интервью с участницами о партнёрах", "Посты в официальных аккаунтах шоу", "Пресс-релизы с упоминанием бренда"],
+                items: ["Публикации в региональных СМИ", "Посты в официальных аккаунтах шоу", "Пресс-релизы с упоминанием бренда"],
               },
             ].map((block) => (
               <div key={block.num} className="p-8 border border-border bg-background hover:shadow-md transition-shadow">
