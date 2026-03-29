@@ -12,21 +12,21 @@ export default function DeckSlidesIntro({ current }: Props) {
           <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-rose/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gold/10 rounded-full blur-3xl" />
           <div className="relative z-10 max-w-4xl">
-            <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-8 font-medium">Коммерческое предложение для партнёров</p>
-            <h1 className="font-serif text-6xl md:text-8xl font-light leading-[1.05] mb-6">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-8 font-semibold">Коммерческое предложение для партнёров</p>
+            <h1 className="font-serif text-5xl md:text-7xl font-normal leading-[1.1] mb-6">
               Красавица
-              <span className="block bg-gradient-to-r from-sage via-terracotta to-rose bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-sage via-terracotta to-rose bg-clip-text text-transparent italic">
                 города 2026
               </span>
             </h1>
             <div className="w-24 h-px bg-gradient-to-r from-sage to-terracotta mx-auto my-8" />
-            <p className="text-xl text-muted-foreground mb-4">
+            <p className="text-lg text-muted-foreground mb-4 font-light tracking-wide">
               Главный конкурс красоты Республики Мордовия
             </p>
-            <p className="text-sm tracking-widest uppercase text-terracotta font-medium">
+            <p className="text-[11px] tracking-[0.3em] uppercase text-terracotta font-semibold">
               11 июля 2026 · Огарев Арена · Саранск
             </p>
-            <p className="mt-12 text-xs text-muted-foreground/60 tracking-widest uppercase">
+            <p className="mt-12 text-[10px] text-muted-foreground/50 tracking-[0.25em] uppercase">
               Нажмите → для перехода к следующему слайду
             </p>
           </div>
@@ -37,8 +37,8 @@ export default function DeckSlidesIntro({ current }: Props) {
       {current === 1 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
-            <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">О мероприятии</p>
-            <h2 className="font-serif text-4xl lg:text-5xl font-light mb-8 leading-tight">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">О мероприятии</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
               Событие,<br />
               <span className="italic text-sage">которое запоминается</span>
             </h2>
@@ -53,8 +53,8 @@ export default function DeckSlidesIntro({ current }: Props) {
                 { val: "6+", label: "Лет истории" },
               ].map((s) => (
                 <div key={s.label} className="border-l-2 border-terracotta pl-4">
-                  <p className="font-serif text-3xl text-foreground">{s.val}</p>
-                  <p className="text-xs tracking-widest uppercase text-muted-foreground mt-1">{s.label}</p>
+                  <p className="font-serif text-2xl font-semibold text-foreground">{s.val}</p>
+                  <p className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground mt-1">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -73,8 +73,8 @@ export default function DeckSlidesIntro({ current }: Props) {
       {/* Слайд 3 — Аудитория */}
       {current === 2 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Целевая аудитория и охват</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Целевая аудитория и охват</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             Кто <span className="italic">увидит</span> ваш бренд
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -85,8 +85,8 @@ export default function DeckSlidesIntro({ current }: Props) {
               { val: "60%", label: "Женщины 25–45", desc: "Ключевой демографический срез", color: "border-indigo" },
             ].map((m) => (
               <div key={m.label} className={`p-6 border-t-2 ${m.color} bg-sand/30`}>
-                <p className="font-serif text-4xl text-foreground mb-2">{m.val}</p>
-                <p className="font-medium text-sm text-foreground mb-1">{m.label}</p>
+                <p className="font-serif text-3xl font-semibold text-foreground mb-2">{m.val}</p>
+                <p className="font-semibold text-xs tracking-wide text-foreground mb-1">{m.label}</p>
                 <p className="text-xs text-muted-foreground">{m.desc}</p>
               </div>
             ))}
@@ -116,8 +116,8 @@ export default function DeckSlidesIntro({ current }: Props) {
       {/* Слайд 4 — Ценность для спонсоров */}
       {current === 3 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Ценность для партнёров</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Ценность для партнёров</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             Что вы <span className="italic">получаете</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
@@ -146,7 +146,7 @@ export default function DeckSlidesIntro({ current }: Props) {
             ].map((block) => (
               <div key={block.num} className="p-8 border border-border bg-background hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-3 mb-5">
-                  <span className={`font-serif text-4xl ${block.color}`}>{block.num}</span>
+                  <span className={`font-serif text-3xl font-normal ${block.color}`}>{block.num}</span>
                   <div className={`h-0.5 flex-1 ${block.bar} opacity-40`} />
                 </div>
                 <h3 className="font-serif text-xl text-foreground mb-4">{block.title}</h3>

@@ -8,7 +8,7 @@ interface DeckNavProps {
 export function DeckNavHeader({ current, goTo }: DeckNavProps) {
   return (
     <div className="flex items-center justify-between px-8 py-4 border-b border-border/50 shrink-0">
-      <a href="/" className="font-serif text-lg text-foreground hover:text-sage transition-colors">
+      <a href="/" className="font-serif text-base font-normal tracking-wide text-foreground hover:text-sage transition-colors">
         Красавица города <span className="text-sage">2026</span>
       </a>
       <div className="flex items-center gap-3">
@@ -21,7 +21,7 @@ export function DeckNavHeader({ current, goTo }: DeckNavProps) {
           />
         ))}
       </div>
-      <span className="font-mono text-xs text-muted-foreground tabular-nums">
+      <span className="font-sans text-[10px] tracking-[0.15em] text-muted-foreground tabular-nums">
         {String(current + 1).padStart(2, "0")} / {String(SLIDES_COUNT).padStart(2, "0")}
       </span>
     </div>
@@ -34,7 +34,7 @@ export function DeckNavFooter({ current, goTo }: DeckNavProps) {
       <button
         onClick={() => goTo(current - 1, "prev")}
         disabled={current === 0}
-        className="flex items-center gap-2 px-4 py-2 text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="flex items-center gap-2 px-4 py-2 text-[10px] tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -43,7 +43,7 @@ export function DeckNavFooter({ current, goTo }: DeckNavProps) {
       </button>
 
       <div className="text-center">
-        <p className="text-xs text-muted-foreground/60 tracking-widest uppercase hidden md:block">
+        <p className="text-[10px] text-muted-foreground/50 tracking-[0.25em] uppercase hidden md:block">
           {SLIDE_TITLES[current]}
         </p>
       </div>
@@ -51,7 +51,7 @@ export function DeckNavFooter({ current, goTo }: DeckNavProps) {
       <button
         onClick={() => goTo(current + 1, "next")}
         disabled={current === SLIDES_COUNT - 1}
-        className="flex items-center gap-2 px-4 py-2 text-xs tracking-widests uppercase text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="flex items-center gap-2 px-4 py-2 text-[10px] tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
       >
         Далее
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

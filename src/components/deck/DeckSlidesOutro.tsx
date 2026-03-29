@@ -10,8 +10,8 @@ export default function DeckSlidesOutro({ current }: Props) {
       {/* Слайд 9 — Таймлайн */}
       {current === 8 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Расписание и таймлайн</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Расписание и таймлайн</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             Путь к <span className="italic text-sage">11 июля</span>
           </h2>
           <div className="relative">
@@ -26,7 +26,7 @@ export default function DeckSlidesOutro({ current }: Props) {
                     <div className={`hidden md:flex w-4 h-4 rounded-full shrink-0 mt-0.5 ${dots[i]} ring-4 ring-background`} />
                     <div className={`p-5 flex-1 border-l-2 md:border-l-0 ${i === 4 ? "bg-foreground text-primary-foreground border-terracotta" : "bg-sand/50 border-terracotta/30"}`}>
                       <p className={`text-xs font-medium mb-0.5 md:hidden ${colors[i]}`}>{item.date}</p>
-                      <p className={`font-serif text-lg ${i === 4 ? "text-primary-foreground" : "text-foreground"}`}>{item.title}</p>
+                      <p className={`font-serif text-base font-medium ${i === 4 ? "text-primary-foreground" : "text-foreground"}`}>{item.title}</p>
                       <p className={`text-sm mt-1 ${i === 4 ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{item.desc}</p>
                     </div>
                   </div>
@@ -40,8 +40,8 @@ export default function DeckSlidesOutro({ current }: Props) {
       {/* Слайд 10 — ROI */}
       {current === 9 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Показатели и ROI</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Показатели и ROI</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             Ваши инвестиции <span className="italic text-gold">работают</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -76,7 +76,7 @@ export default function DeckSlidesOutro({ current }: Props) {
               ].map((row) => (
                 <div key={row.label} className={`flex justify-between items-center p-4 ${row.highlight ? "bg-foreground text-primary-foreground" : "bg-sand/50"}`}>
                   <span className={`text-sm ${row.highlight ? "text-primary-foreground" : "text-muted-foreground"}`}>{row.label}</span>
-                  <span className={`font-serif text-lg font-medium ${row.highlight ? "text-gold" : "text-foreground"}`}>{row.cpm}</span>
+                  <span className={`font-serif text-base font-semibold ${row.highlight ? "text-gold" : "text-foreground"}`}>{row.cpm}</span>
                 </div>
               ))}
               <p className="text-xs text-muted-foreground/60">CPM — стоимость 1 000 контактов</p>
@@ -95,8 +95,8 @@ export default function DeckSlidesOutro({ current }: Props) {
       {current === 10 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
-            <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Следующий шаг</p>
-            <h2 className="font-serif text-4xl lg:text-5xl font-light mb-8 leading-tight">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Следующий шаг</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
               Давайте<br />
               <span className="italic text-sage">познакомимся</span>
             </h2>
@@ -137,7 +137,7 @@ export default function DeckSlidesOutro({ current }: Props) {
               className="w-full h-full object-cover object-top opacity-50 mix-blend-luminosity"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
-              <p className="font-serif text-5xl text-primary-foreground leading-tight mb-4">«Быть рядом<br />со звёздным<br />событием»</p>
+              <p className="font-serif text-4xl font-normal text-primary-foreground leading-[1.2] mb-4">«Быть рядом<br />со звёздным<br />событием»</p>
               <p className="text-primary-foreground/60 text-sm tracking-widest uppercase">Красавица города 2026</p>
             </div>
           </div>
@@ -153,8 +153,8 @@ export default function DeckSlidesOutro({ current }: Props) {
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-terracotta/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-indigo/10 rounded-full blur-3xl" />
           <div className="relative z-10 max-w-3xl">
-            <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/50 mb-8">Слоган события</p>
-            <h2 className="font-serif text-5xl md:text-7xl font-light text-primary-foreground leading-[1.1] mb-8">
+            <p className="text-[10px] tracking-[0.35em] uppercase text-primary-foreground/50 mb-8 font-semibold">Слоган события</p>
+            <h2 className="font-serif text-4xl md:text-6xl font-normal text-primary-foreground leading-[1.15] mb-8">
               Красота.<br />
               <span className="bg-gradient-to-r from-gold via-terracotta to-rose bg-clip-text text-transparent">
                 Город. Вы.

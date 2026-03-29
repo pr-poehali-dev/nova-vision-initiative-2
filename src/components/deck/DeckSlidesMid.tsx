@@ -10,8 +10,8 @@ export default function DeckSlidesMid({ current }: Props) {
       {/* Слайд 5 — Медиаплан */}
       {current === 4 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Медиаплан и продвижение</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Медиаплан и продвижение</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             6 недель <span className="italic text-terracotta">медиаприсутствия</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -68,8 +68,8 @@ export default function DeckSlidesMid({ current }: Props) {
       {/* Слайд 6 — Пакеты спонсорства */}
       {current === 5 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Пакеты спонсорства</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-8 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Пакеты спонсорства</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
             Выберите свой <span className="italic text-sage">уровень</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -77,8 +77,8 @@ export default function DeckSlidesMid({ current }: Props) {
               <div key={pkg.level} className="border border-border bg-background overflow-hidden">
                 <div className={`h-1.5 bg-gradient-to-r ${pkg.color}`} />
                 <div className="p-6">
-                  <p className={`font-serif text-2xl ${pkg.textColor} mb-1`}>{pkg.price}</p>
-                  <p className="font-serif text-base text-foreground mb-4">{pkg.level}</p>
+                  <p className={`font-serif text-xl font-semibold ${pkg.textColor} mb-1`}>{pkg.price}</p>
+                  <p className="font-serif text-sm font-normal text-foreground mb-4">{pkg.level}</p>
                   <ul className="space-y-2">
                     {pkg.perks.map((perk) => (
                       <li key={perk} className="flex items-start gap-2 text-xs text-muted-foreground">
@@ -105,8 +105,8 @@ export default function DeckSlidesMid({ current }: Props) {
       {/* Слайд 7 — Активации */}
       {current === 6 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Активации спонсоров</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Активации спонсоров</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             На площадке <span className="italic text-indigo">и онлайн</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -153,8 +153,8 @@ export default function DeckSlidesMid({ current }: Props) {
       {/* Слайд 8 — Кейсы / прошлые результаты */}
       {current === 7 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-terracotta mb-6">Прошлые результаты</p>
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-10 leading-tight">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Прошлые результаты</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
             Цифры <span className="italic text-terracotta">предыдущих сезонов</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -168,7 +168,7 @@ export default function DeckSlidesMid({ current }: Props) {
                   { val: "8", label: "Партнёров" },
                 ].map((s) => (
                   <div key={s.label}>
-                    <p className="font-serif text-3xl text-primary-foreground">{s.val}</p>
+                    <p className="font-serif text-2xl font-semibold text-primary-foreground">{s.val}</p>
                     <p className="text-xs text-primary-foreground/50 mt-1">{s.label}</p>
                   </div>
                 ))}
@@ -206,7 +206,7 @@ export default function DeckSlidesMid({ current }: Props) {
               { val: "100%", label: "Партнёров сезона 2025 готовы рекомендовать участие", color: "text-sage" },
             ].map((s) => (
               <div key={s.label} className="p-5 border border-border text-center">
-                <p className={`font-serif text-4xl mb-2 ${s.color}`}>{s.val}</p>
+                <p className={`font-serif text-3xl font-semibold mb-2 ${s.color}`}>{s.val}</p>
                 <p className="text-xs text-muted-foreground leading-relaxed">{s.label}</p>
               </div>
             ))}
