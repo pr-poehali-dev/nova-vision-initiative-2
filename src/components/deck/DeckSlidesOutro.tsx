@@ -49,10 +49,10 @@ export default function DeckSlidesOutro({ current }: Props) {
               <p className="text-xs tracking-widest uppercase text-muted-foreground mb-5">KPI для Генерального партнёра</p>
               <div className="space-y-4">
                 {[
-                  { label: "Показы логотипа в прямом эфире", val: "50 000+", pct: 100, color: "bg-gold" },
+                  { label: "Охват в соцсетях за 6 недель", val: "80 000+", pct: 100, color: "bg-rose" },
                   { label: "Живые контакты на площадке", val: "3 000+", pct: 60, color: "bg-terracotta" },
-                  { label: "Охват в соцсетях за 6 недель", val: "100 000+", pct: 100, color: "bg-rose" },
-                  { label: "Публикации в региональных СМИ", val: "20+", pct: 40, color: "bg-indigo" },
+                  { label: "Охват через СМИ и пресс-релизы", val: "30 000+", pct: 50, color: "bg-indigo" },
+                  { label: "Публикации в региональных СМИ", val: "20+", pct: 40, color: "bg-gold" },
                 ].map((kpi) => (
                   <div key={kpi.label}>
                     <div className="flex justify-between text-sm mb-1.5">
@@ -69,7 +69,7 @@ export default function DeckSlidesOutro({ current }: Props) {
             <div className="space-y-4">
               <p className="text-xs tracking-widests uppercase text-muted-foreground mb-5">Стоимость контакта vs альтернативы</p>
               {[
-                { label: "Спонсорство «Красавица города»", cpm: "4,5 ₽", highlight: true },
+                { label: "Спонсорство «Красавица города»", cpm: "5 ₽", highlight: true },
                 { label: "Таргетированная реклама ВК", cpm: "12–20 ₽", highlight: false },
                 { label: "Наружная реклама (билборд/мес.)", cpm: "15–30 ₽", highlight: false },
                 { label: "ТВ-реклама регион (30 сек)", cpm: "30–60 ₽", highlight: false },
@@ -85,7 +85,7 @@ export default function DeckSlidesOutro({ current }: Props) {
           <div className="p-5 border border-gold/30 bg-gold/5 flex items-center gap-4">
             <span className="text-3xl">💡</span>
             <p className="text-sm text-foreground leading-relaxed">
-              Генеральный партнёр за <span className="font-medium">450 000 ₽</span> получает <span className="font-medium">~100 000 контактов</span> — итоговый CPM составляет <span className="font-medium text-gold">4,5 ₽</span>, что в 3–10 раз дешевле альтернативных каналов.
+              Генеральный партнёр за <span className="font-medium">500 000 ₽+</span> получает <span className="font-medium">~100 000 контактов</span> — итоговый CPM составляет <span className="font-medium text-gold">5 ₽</span>, что в 3–10 раз дешевле альтернативных каналов.
             </p>
           </div>
         </div>
