@@ -11,7 +11,7 @@ export function Header() {
             Красавица города <span className="text-sage">2026</span>
           </a>
 
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden md:flex items-center gap-8">
             <a
               href="#about"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
@@ -35,6 +35,12 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
               Контакты
+            </a>
+            <a
+              href="/deck"
+              className="px-4 py-2 text-xs tracking-widest uppercase bg-gradient-to-r from-terracotta to-rose text-white hover:opacity-90 transition-opacity font-medium"
+            >
+              Презентация
             </a>
           </div>
 
