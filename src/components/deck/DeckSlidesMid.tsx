@@ -7,8 +7,8 @@ interface Props {
 export default function DeckSlidesMid({ current }: Props) {
   return (
     <>
-      {/* Слайд 5 — Медиаплан */}
-      {current === 4 && (
+      {/* Слайд 4 — Медиаплан */}
+      {current === 3 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Медиаплан и продвижение</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
@@ -65,8 +65,8 @@ export default function DeckSlidesMid({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 6 — Пакеты спонсорства */}
-      {current === 5 && (
+      {/* Слайд 5 — Пакеты спонсорства */}
+      {current === 4 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Пакеты спонсорства</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
@@ -102,8 +102,8 @@ export default function DeckSlidesMid({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 7 — Активации */}
-      {current === 6 && (
+      {/* Слайд 6 — Активации */}
+      {current === 5 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Активации спонсоров</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
@@ -150,8 +150,8 @@ export default function DeckSlidesMid({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 8 — Кейсы / прошлые результаты */}
-      {current === 7 && (
+      {/* Слайд 7 — Кейсы / прошлые результаты */}
+      {current === 6 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Прошлые результаты</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">

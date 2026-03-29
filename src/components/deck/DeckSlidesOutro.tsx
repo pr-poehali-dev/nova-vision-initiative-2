@@ -7,8 +7,8 @@ interface Props {
 export default function DeckSlidesOutro({ current }: Props) {
   return (
     <>
-      {/* Слайд 9 — Таймлайн */}
-      {current === 8 && (
+      {/* Слайд 8 — Таймлайн */}
+      {current === 7 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Расписание и таймлайн</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
@@ -37,8 +37,8 @@ export default function DeckSlidesOutro({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 10 — ROI */}
-      {current === 9 && (
+      {/* Слайд 9 — ROI */}
+      {current === 8 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Показатели и ROI</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
@@ -91,8 +91,8 @@ export default function DeckSlidesOutro({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 11 — Контакты */}
-      {current === 10 && (
+      {/* Слайд 10 — Контакты */}
+      {current === 9 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
             <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Следующий шаг</p>
@@ -144,8 +144,8 @@ export default function DeckSlidesOutro({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 12 — CTA */}
-      {current === 11 && (
+      {/* Слайд 11 — CTA */}
+      {current === 10 && (
         <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-foreground" />
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sage via-terracotta to-rose" />

@@ -5,36 +5,8 @@ interface Props {
 export default function DeckSlidesIntro({ current }: Props) {
   return (
     <>
-      {/* Слайд 1 — Титул */}
+      {/* Слайд 1 — О событии */}
       {current === 0 && (
-        <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo/10 via-background to-rose/10" />
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-rose/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gold/10 rounded-full blur-3xl" />
-          <div className="relative z-10 max-w-4xl">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-8 font-semibold">Коммерческое предложение для партнёров</p>
-            <h1 className="font-serif text-5xl md:text-7xl font-normal leading-[1.1] mb-6">
-              Красавица
-              <span className="block bg-gradient-to-r from-sage via-terracotta to-rose bg-clip-text text-transparent italic">
-                города 2026
-              </span>
-            </h1>
-            <div className="w-24 h-px bg-gradient-to-r from-sage to-terracotta mx-auto my-8" />
-            <p className="text-lg text-muted-foreground mb-4 font-light tracking-wide">
-              Главный конкурс красоты Республики Мордовия
-            </p>
-            <p className="text-[11px] tracking-[0.3em] uppercase text-terracotta font-semibold">
-              11 июля 2026 · Огарев Арена · Саранск
-            </p>
-            <p className="mt-12 text-[10px] text-muted-foreground/50 tracking-[0.25em] uppercase">
-              Нажмите → для перехода к следующему слайду
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* Слайд 2 — О событии */}
-      {current === 1 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
             <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">О мероприятии</p>
@@ -70,8 +42,8 @@ export default function DeckSlidesIntro({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 3 — Аудитория */}
-      {current === 2 && (
+      {/* Слайд 2 — Аудитория */}
+      {current === 1 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Целевая аудитория и охват</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
@@ -113,8 +85,8 @@ export default function DeckSlidesIntro({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 4 — Ценность для спонсоров */}
-      {current === 3 && (
+      {/* Слайд 3 — Ценность для спонсоров */}
+      {current === 2 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Ценность для партнёров</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
