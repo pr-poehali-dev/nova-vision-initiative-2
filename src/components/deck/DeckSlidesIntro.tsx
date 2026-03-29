@@ -33,7 +33,7 @@ export default function DeckSlidesIntro({ current }: Props) {
           </div>
           <div className="relative overflow-hidden hidden lg:block">
             <img
-              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/585ce417-0642-4320-bfd1-d679b7f89523.jpg"
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/06567582-5289-4615-aa4e-3a2bad8ecec4.jpg"
               alt="Участницы конкурса"
               className="w-full h-full object-cover object-top"
             />
