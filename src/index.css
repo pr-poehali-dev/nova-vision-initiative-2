@@ -6,45 +6,45 @@
 
 @layer base {
   :root {
-    /* Japandi color palette - warm naturals with muted accents */
-    --background: 40 20% 96%;
-    --foreground: 30 15% 15%;
+    /* Luxury pageant palette — deep navy, champagne, gold */
+    --background: 224 28% 97%;
+    --foreground: 222 35% 12%;
 
-    --card: 40 15% 98%;
-    --card-foreground: 30 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 35% 12%;
 
-    --popover: 40 15% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 35% 12%;
 
-    --primary: 150 30% 25%;
-    --primary-foreground: 40 15% 98%;
+    --primary: 222 35% 12%;
+    --primary-foreground: 45 30% 96%;
 
-    --secondary: 40 15% 92%;
-    --secondary-foreground: 30 15% 15%;
+    --secondary: 224 20% 93%;
+    --secondary-foreground: 222 35% 12%;
 
-    --muted: 40 12% 90%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 224 18% 91%;
+    --muted-foreground: 222 15% 48%;
 
-    --accent: 25 50% 55%;
-    --accent-foreground: 40 15% 98%;
+    --accent: 42 88% 54%;
+    --accent-foreground: 222 35% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 150 30% 25%;
+    --border: 224 20% 86%;
+    --input: 224 20% 86%;
+    --ring: 42 88% 54%;
 
     --radius: 0.25rem;
 
     /* Custom tokens */
-    --sand: 38 30% 90%;
-    --sage: 155 45% 30%;
-    --terracotta: 18 70% 52%;
-    --indigo: 262 45% 42%;
-    --stone: 40 8% 65%;
-    --gold: 42 85% 52%;
-    --rose: 340 60% 58%;
+    --sand: 45 28% 92%;
+    --sage: 168 38% 32%;
+    --terracotta: 348 58% 42%;
+    --indigo: 224 48% 32%;
+    --stone: 222 10% 62%;
+    --gold: 42 88% 54%;
+    --rose: 348 58% 42%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -57,41 +57,41 @@
   }
 
   .dark {
-    --background: 30 15% 10%;
-    --foreground: 40 15% 92%;
+    --background: 222 38% 9%;
+    --foreground: 45 30% 94%;
 
-    --card: 30 15% 12%;
-    --card-foreground: 40 15% 92%;
+    --card: 222 35% 12%;
+    --card-foreground: 45 30% 94%;
 
-    --popover: 30 15% 12%;
-    --popover-foreground: 40 15% 92%;
+    --popover: 222 35% 12%;
+    --popover-foreground: 45 30% 94%;
 
-    --primary: 150 25% 45%;
-    --primary-foreground: 30 15% 10%;
+    --primary: 45 30% 94%;
+    --primary-foreground: 222 38% 9%;
 
-    --secondary: 30 12% 18%;
-    --secondary-foreground: 40 15% 92%;
+    --secondary: 222 30% 16%;
+    --secondary-foreground: 45 30% 94%;
 
-    --muted: 30 12% 18%;
-    --muted-foreground: 40 10% 65%;
+    --muted: 222 30% 16%;
+    --muted-foreground: 222 15% 60%;
 
-    --accent: 25 40% 45%;
-    --accent-foreground: 30 15% 10%;
+    --accent: 42 88% 54%;
+    --accent-foreground: 222 38% 9%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 12% 22%;
-    --input: 30 12% 22%;
-    --ring: 150 25% 45%;
+    --border: 222 28% 20%;
+    --input: 222 28% 20%;
+    --ring: 42 88% 54%;
 
-    --sand: 30 12% 22%;
-    --sage: 155 40% 50%;
-    --terracotta: 18 65% 55%;
-    --indigo: 262 45% 55%;
-    --stone: 30 8% 35%;
-    --gold: 42 80% 55%;
-    --rose: 340 55% 62%;
+    --sand: 222 28% 18%;
+    --sage: 168 38% 45%;
+    --terracotta: 348 55% 52%;
+    --indigo: 224 48% 55%;
+    --stone: 222 10% 40%;
+    --gold: 42 85% 58%;
+    --rose: 348 55% 52%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
