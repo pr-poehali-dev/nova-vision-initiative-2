@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext");
 
 @tailwind base;
 @tailwind components;
@@ -37,12 +37,14 @@
 
     --radius: 0.25rem;
 
-    /* Custom Japandi tokens */
-    --sand: 40 20% 92%;
-    --sage: 150 30% 25%;
-    --terracotta: 25 50% 55%;
-    --indigo: 260 30% 35%;
-    --stone: 40 8% 70%;
+    /* Custom tokens */
+    --sand: 38 30% 90%;
+    --sage: 155 45% 30%;
+    --terracotta: 18 70% 52%;
+    --indigo: 262 45% 42%;
+    --stone: 40 8% 65%;
+    --gold: 42 85% 52%;
+    --rose: 340 60% 58%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -84,10 +86,12 @@
     --ring: 150 25% 45%;
 
     --sand: 30 12% 22%;
-    --sage: 150 25% 45%;
-    --terracotta: 25 40% 45%;
-    --indigo: 260 25% 40%;
+    --sage: 155 40% 50%;
+    --terracotta: 18 65% 55%;
+    --indigo: 262 45% 55%;
     --stone: 30 8% 35%;
+    --gold: 42 80% 55%;
+    --rose: 340 55% 62%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

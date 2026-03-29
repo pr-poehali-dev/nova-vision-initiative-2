@@ -89,20 +89,23 @@ export function Philosophy() {
             <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground">Кто придёт на шоу</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-border">
-            <div className="bg-background p-10">
-              <p className="font-serif text-5xl text-sage mb-4">18–50</p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="bg-background border border-border p-10 relative overflow-hidden group">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-terracotta to-rose" />
+              <p className="font-serif text-5xl text-terracotta mb-4">18–50</p>
               <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Возраст аудитории</p>
               <p className="text-muted-foreground leading-relaxed text-sm">Активные жители Саранска и Республики Мордовия в самом платёжеспособном возрасте.</p>
             </div>
-            <div className="bg-background p-10">
-              <p className="font-serif text-5xl text-sage mb-4">70%</p>
+            <div className="bg-background border border-border p-10 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose to-indigo" />
+              <p className="font-serif text-5xl text-rose mb-4">70%</p>
               <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Женская аудитория</p>
               <p className="text-muted-foreground leading-relaxed text-sm">Профессионально активные женщины, следящие за модой, красотой и стилем жизни. Лидеры мнений в своём кругу.</p>
             </div>
-            <div className="bg-background p-10">
-              <p className="font-serif text-5xl text-sage mb-4">★★★</p>
-              <p className="text-xs tracking-widests uppercase text-muted-foreground mb-3">Социальный статус</p>
+            <div className="bg-background border border-border p-10 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo to-sage" />
+              <p className="font-serif text-5xl text-indigo mb-4">★★★</p>
+              <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Социальный статус</p>
               <p className="text-muted-foreground leading-relaxed text-sm">Средний и выше среднего. Гости, готовые к приобретению премиальных товаров и услуг.</p>
             </div>
           </div>

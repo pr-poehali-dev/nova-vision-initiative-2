@@ -10,6 +10,9 @@ const packages = [
       </svg>
     ),
     highlight: true,
+    accent: "gold",
+    accentBg: "bg-gold",
+    accentText: "text-gold",
   },
   {
     title: "Титульный партнёр",
@@ -65,30 +68,78 @@ export function Services() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border">
-            {packages.map((pkg) => (
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              {
+                title: "Генеральный партнёр",
+                price: "450 000 ₽",
+                description: "Эксклюзивное размещение логотипа на всех материалах, баннерах и сцене. Анонс с главной сцены, VIP-места для 10 гостей, интеграция в трансляцию.",
+                perks: ["Логотип на сцене и всех баннерах", "10 VIP-мест в партере", "Интеграция в прямую трансляцию", "Анонс со сцены ведущим", "Пресс-волл и фотозона"],
+                topColor: "bg-gradient-to-r from-gold to-terracotta",
+                badge: "Топ",
+                badgeColor: "bg-gold text-foreground",
+                numColor: "text-gold",
+              },
+              {
+                title: "Титульный партнёр",
+                price: "350 000 ₽",
+                description: "Логотип на баннерах и пресс-волле, упоминание с главной сцены, 6 VIP-мест, размещение в социальных сетях и на официальном сайте.",
+                perks: ["Логотип на баннерах и пресс-волле", "6 VIP-мест", "Упоминание со сцены", "Посты в соцсетях мероприятия", "Размещение на официальном сайте"],
+                topColor: "bg-gradient-to-r from-rose to-indigo",
+                badge: null,
+                badgeColor: "",
+                numColor: "text-rose",
+              },
+              {
+                title: "Официальный партнёр",
+                price: "300 000 ₽",
+                description: "Логотип на официальных материалах и сайте, упоминание в соцсетях, 4 пригласительных, возможность брендированного стенда в фойе.",
+                perks: ["Логотип на материалах и сайте", "4 пригласительных билета", "Брендированный стенд в фойе", "Упоминание в соцсетях", "Фото и видео с мероприятия"],
+                topColor: "bg-gradient-to-r from-sage to-indigo",
+                badge: null,
+                badgeColor: "",
+                numColor: "text-sage",
+              },
+              {
+                title: "Информационный партнёр",
+                price: "200 000 ₽",
+                description: "Размещение логотипа на сайте и в пресс-материалах, взаимный пиар в СМИ и соцсетях, 2 пригласительных на шоу.",
+                perks: ["Логотип на сайте и пресс-материалах", "2 пригласительных билета", "Взаимный пиар в СМИ", "Упоминание в соцсетях", "Пресс-релиз с упоминанием бренда"],
+                topColor: "bg-gradient-to-r from-stone to-stone/60",
+                badge: null,
+                badgeColor: "",
+                numColor: "text-muted-foreground",
+              },
+            ].map((pkg) => (
               <div
                 key={pkg.title}
-                className={`group p-10 lg:p-14 hover:bg-card transition-colors duration-300 ${pkg.highlight ? "bg-foreground" : "bg-background"}`}
+                className="group bg-background border border-border hover:shadow-lg transition-all duration-300 overflow-hidden"
               >
-                <div className={`mb-6 ${pkg.highlight ? "text-primary-foreground/70" : "text-sage"}`}>
-                  {pkg.icon}
+                <div className={`h-1.5 ${pkg.topColor}`} />
+                <div className="p-10 lg:p-12">
+                  <div className="flex items-start justify-between mb-5 gap-4">
+                    <div>
+                      <h3 className="font-serif text-2xl md:text-3xl text-foreground">{pkg.title}</h3>
+                      {pkg.badge && (
+                        <span className={`inline-block mt-2 px-3 py-0.5 text-xs tracking-widest uppercase font-medium ${pkg.badgeColor}`}>
+                          {pkg.badge}
+                        </span>
+                      )}
+                    </div>
+                    <p className={`font-serif text-xl shrink-0 ${pkg.numColor}`}>{pkg.price}</p>
+                  </div>
+                  <p className="leading-relaxed mb-6 text-muted-foreground text-sm">{pkg.description}</p>
+                  <ul className="space-y-2.5">
+                    {pkg.perks.map((perk) => (
+                      <li key={perk} className="flex items-center gap-3 text-sm text-muted-foreground">
+                        <svg className={`w-4 h-4 shrink-0 ${pkg.numColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {perk}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="flex items-start justify-between mb-4 gap-4">
-                  <h3 className={`font-serif text-2xl md:text-3xl ${pkg.highlight ? "text-primary-foreground" : "text-foreground"}`}>{pkg.title}</h3>
-                  <p className={`font-serif text-xl shrink-0 ${pkg.highlight ? "text-primary-foreground/80" : "text-sage"}`}>{pkg.price}</p>
-                </div>
-                <p className={`leading-relaxed mb-6 ${pkg.highlight ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{pkg.description}</p>
-                <ul className="space-y-2">
-                  {pkg.perks.map((perk) => (
-                    <li key={perk} className={`flex items-center gap-3 text-sm ${pkg.highlight ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                      <svg className={`w-4 h-4 shrink-0 ${pkg.highlight ? "text-primary-foreground/50" : "text-sage"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {perk}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -114,18 +165,18 @@ export function Services() {
 
             <div className="lg:col-span-8 space-y-0">
               {[
-                { label: "Зрителей офлайн в Огарев Арене", value: "3 000+", bar: 60 },
-                { label: "Общий охват в аналитике (соцсети + СМИ)", value: "100 000+", bar: 100 },
-                { label: "Просмотры видеозаписи после эфира", value: "50 000+", bar: 50 },
-                { label: "Участниц конкурса", value: "13", bar: 13 },
+                { label: "Зрителей офлайн в Огарев Арене", value: "3 000+", bar: 60, color: "bg-terracotta", textColor: "text-terracotta" },
+                { label: "Общий охват в аналитике (соцсети + СМИ)", value: "100 000+", bar: 100, color: "bg-rose", textColor: "text-rose" },
+                { label: "Просмотры видеозаписи после эфира", value: "50 000+", bar: 50, color: "bg-indigo", textColor: "text-indigo" },
+                { label: "Участниц конкурса", value: "13", bar: 13, color: "bg-sage", textColor: "text-sage" },
               ].map((item) => (
                 <div key={item.label} className="py-10 lg:py-12 border-t border-border last:border-b">
                   <div className="flex items-end justify-between mb-4 gap-4">
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">{item.label}</p>
-                    <p className="font-serif text-3xl lg:text-4xl text-sage shrink-0">{item.value}</p>
+                    <p className={`font-serif text-3xl lg:text-4xl shrink-0 ${item.textColor}`}>{item.value}</p>
                   </div>
-                  <div className="h-px bg-border w-full mt-4">
-                    <div className="h-px bg-sage" style={{ width: `${item.bar}%` }} />
+                  <div className="h-1.5 bg-border rounded-full w-full mt-4 overflow-hidden">
+                    <div className={`h-1.5 rounded-full ${item.color}`} style={{ width: `${item.bar}%` }} />
                   </div>
                 </div>
               ))}
