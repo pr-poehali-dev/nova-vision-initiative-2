@@ -18,10 +18,10 @@ export default function DeckSlidesMid({ current }: Props) {
             {[
               {
                 channel: "Социальные сети",
-                reach: "60 000+",
+                reach: "80 000+",
                 color: "bg-rose/10 border-rose/30",
                 numColor: "text-rose",
-                items: ["ВКонтакте, Telegram, Instagram*", "Анонсы, stories, reels с участницами", "Посты-упоминания партнёров", "Прямые эфиры с кастинга"],
+                items: ["ВКонтакте, Telegram, Instagram*", "Анонсы, stories, reels с участницами", "Посты-упоминания партнёров"],
               },
               {
                 channel: "СМИ и пресса",
@@ -35,14 +35,14 @@ export default function DeckSlidesMid({ current }: Props) {
                 reach: "50 000+",
                 color: "bg-gold/10 border-gold/30",
                 numColor: "text-gold",
-                items: ["150+ билбордов и ситилайтов", "Афиши в центре Саранска", "Логотипы партнёров на афишах", "Баннеры на площадке за 2 недели"],
+                items: ["Афиши в центре Саранска", "Логотипы партнёров на афишах", "Баннеры на площадке за 2 недели"],
               },
               {
-                channel: "Трансляция и видео",
-                reach: "50 000+",
+                channel: "Видеоконтент и рилсы",
+                reach: "40 000+",
                 color: "bg-sage/10 border-sage/30",
                 numColor: "text-sage",
-                items: ["Прямая трансляция шоу онлайн", "Логотип в рамке трансляции", "Видеозапись остаётся в сети", "Рилсы с хайлайтами шоу"],
+                items: ["Рилсы с хайлайтами шоу", "Видеозапись события остаётся в сети", "Брендированные видео с участницами", "Видеоотчёт для спонсоров"],
               },
             ].map((ch) => (
               <div key={ch.channel} className={`p-6 border rounded-sm ${ch.color}`}>
@@ -96,7 +96,7 @@ export default function DeckSlidesMid({ current }: Props) {
           <div className="mt-6 flex items-center gap-4 p-5 bg-terracotta/10 border border-terracotta/30">
             <span className="text-2xl">⚡</span>
             <p className="text-sm text-foreground">
-              <span className="font-medium">Ограниченное количество мест:</span> один спонсор на каждый уровень. При подписании договора до 1 мая — скидка 10%.
+              <span className="font-medium">Ограниченное количество мест:</span> один спонсор на каждый уровень.
             </p>
           </div>
         </div>
@@ -116,8 +116,6 @@ export default function DeckSlidesMid({ current }: Props) {
                 {[
                   { title: "Брендированный стенд", desc: "Ваш стенд в фойе Огарев Арены — живые продажи и коммуникация с гостями" },
                   { title: "Именная номинация", desc: "Вручение приза «Бренд [компания]» — выход на сцену и отдельный блок шоу" },
-                  { title: "Продакт-плейсмент", desc: "Ваш продукт в образе финалисток или подарочных наборах для гостей" },
-                  { title: "Розыгрыш для зала", desc: "Интерактивный конкурс с призами от вашего бренда для 3 000 гостей" },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4 p-4 bg-sand/50 border-l-2 border-terracotta">
                     <div>
@@ -134,8 +132,6 @@ export default function DeckSlidesMid({ current }: Props) {
                 {[
                   { title: "Совместный контент", desc: "Совместные рилсы и stories с участницами — публикация в их аккаунтах" },
                   { title: "Брендированный хэштег", desc: "Отдельный хэштег события с упоминанием бренда во всех постах" },
-                  { title: "Email-рассылка", desc: "Ваш логотип и оффер в письмах базы подписчиков мероприятия" },
-                  { title: "Интеграция в трансляцию", desc: "Баннер и озвучка вашего бренда каждые 15 минут во время шоу" },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4 p-4 bg-indigo/5 border-l-2 border-indigo">
                     <div>
@@ -169,7 +165,7 @@ export default function DeckSlidesMid({ current }: Props) {
                 {[
                   { val: "2 000+", label: "Зрителей в зале" },
                   { val: "1 500+", label: "Продано билетов" },
-                  { val: "50 000+", label: "Онлайн-трансляция" },
+                  { val: "25 000+", label: "Онлайн-трансляция" },
                   { val: "12", label: "Профессиональных боёв" },
                 ].map((s) => (
                   <div key={s.label}>
@@ -180,8 +176,8 @@ export default function DeckSlidesMid({ current }: Props) {
               </div>
               <div className="border-t border-primary-foreground/20 pt-5">
                 <p className="text-xs text-primary-foreground/50 uppercase tracking-widest mb-2">Совокупный охват</p>
-                <p className="font-serif text-4xl font-semibold text-terracotta">10 000 000+</p>
-                <p className="text-xs text-primary-foreground/40 mt-1">просмотров и охватов во всех каналах</p>
+                <p className="font-serif text-4xl font-semibold text-terracotta">100 000+</p>
+                <p className="text-xs text-primary-foreground/40 mt-1">совокупный охват во всех каналах</p>
               </div>
             </div>
 
@@ -235,7 +231,7 @@ export default function DeckSlidesMid({ current }: Props) {
             {[
               { val: "20", label: "Бойцов из России и СНГ", color: "text-gold" },
               { val: "7+", label: "Городов-участников по географии болельщиков", color: "text-rose" },
-              { val: "10М+", label: "Суммарный охват — подтверждённый результат", color: "text-terracotta" },
+              { val: "100 000+", label: "Суммарный охват — подтверждённый результат", color: "text-terracotta" },
             ].map((s) => (
               <div key={s.label} className="p-5 border border-border text-center">
                 <p className={`font-serif text-3xl font-semibold mb-2 ${s.color}`}>{s.val}</p>
