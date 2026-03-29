@@ -150,22 +150,27 @@ export default function DeckSlidesMid({ current }: Props) {
         </div>
       )}
 
-      {/* Слайд 7 — Кейсы / прошлые результаты */}
+      {/* Слайд 7 — Кейс GENESIS PRO MMA 5 */}
       {current === 6 && (
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
-          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Прошлые результаты</p>
-          <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
-            Цифры <span className="italic text-terracotta">предыдущих сезонов</span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-4 font-semibold">Наш опыт · Кейс</p>
+          <div className="flex items-end gap-4 mb-8">
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal leading-[1.2]">
+              GENESIS PRO MMA 5
+            </h2>
+            <p className="text-sm text-muted-foreground mb-1">18 октября 2025 · Огарев Арена, Саранск</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {/* Левая колонка — цифры */}
             <div className="p-8 bg-foreground text-primary-foreground">
-              <p className="text-xs tracking-widest uppercase text-primary-foreground/50 mb-4">Сезон 2025 · Саранск</p>
+              <p className="text-xs tracking-widest uppercase text-primary-foreground/50 mb-6">Результаты мероприятия</p>
               <div className="grid grid-cols-2 gap-6 mb-6">
                 {[
-                  { val: "2 800", label: "Гостей в зале" },
-                  { val: "85 000", label: "Охват онлайн" },
-                  { val: "12", label: "Участниц" },
-                  { val: "8", label: "Партнёров" },
+                  { val: "2 000+", label: "Зрителей в зале" },
+                  { val: "1 500+", label: "Продано билетов" },
+                  { val: "50 000+", label: "Онлайн-трансляция" },
+                  { val: "12", label: "Профессиональных боёв" },
                 ].map((s) => (
                   <div key={s.label}>
                     <p className="font-serif text-2xl font-semibold text-primary-foreground">{s.val}</p>
@@ -173,37 +178,51 @@ export default function DeckSlidesMid({ current }: Props) {
                   </div>
                 ))}
               </div>
-              <p className="text-sm text-primary-foreground/70 leading-relaxed italic">
-                "Наш бренд за один вечер получил больше живых контактов, чем за месяц таргетированной рекламы."
-              </p>
-              <p className="text-xs text-primary-foreground/40 mt-2">— Партнёр сезона 2025</p>
+              <div className="border-t border-primary-foreground/20 pt-5">
+                <p className="text-xs text-primary-foreground/50 uppercase tracking-widest mb-2">Совокупный охват</p>
+                <p className="font-serif text-4xl font-semibold text-terracotta">10 000 000+</p>
+                <p className="text-xs text-primary-foreground/40 mt-1">просмотров и охватов во всех каналах</p>
+              </div>
             </div>
+
+            {/* Правая колонка — детали */}
             <div className="space-y-4">
-              <p className="text-sm text-muted-foreground mb-2">Сравнение конкурентов региона</p>
-              {[
-                { name: "Красавица города (Саранск)", val: 85, color: "bg-terracotta", num: "85 000" },
-                { name: "Мисс Нижний Новгород", val: 70, color: "bg-rose", num: "70 000" },
-                { name: "Мисс Казань", val: 95, color: "bg-indigo", num: "95 000" },
-                { name: "Мисс Мордовия", val: 60, color: "bg-sage", num: "60 000" },
-              ].map((item) => (
-                <div key={item.name}>
-                  <div className="flex justify-between text-xs text-muted-foreground mb-1.5">
-                    <span>{item.name}</span>
-                    <span className="font-medium">{item.num}</span>
-                  </div>
-                  <div className="h-2 bg-border rounded-full overflow-hidden">
-                    <div className={`h-2 rounded-full ${item.color}`} style={{ width: `${item.val}%` }} />
-                  </div>
-                </div>
-              ))}
-              <p className="text-xs text-muted-foreground/60 mt-4">Охват в соцсетях и СМИ, аналитика 2025</p>
+              <div className="p-5 border border-border bg-sand/30">
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Участники</p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-semibold">20 бойцов</span> — спортсмены из регионов России и стран СНГ.
+                  Под знамёнами Мордовии выступили местные бойцы.
+                </p>
+              </div>
+              <div className="p-5 border border-border bg-sand/30">
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Почётные гости</p>
+                <ul className="space-y-2">
+                  {[
+                    "Никита Ларьков — министр спорта Мордовии",
+                    "Сергей Мытенков — вице-президент РСПП",
+                    "Михаил Маваши",
+                  ].map((g) => (
+                    <li key={g} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-terracotta mt-1.5 shrink-0" />
+                      {g}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="p-5 border border-border bg-sand/30">
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">География болельщиков</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Саранск, Нижний Новгород, Ульяновск, Пенза, Самара, Тольятти, Москва
+                </p>
+              </div>
             </div>
           </div>
+
           <div className="grid grid-cols-3 gap-4">
             {[
-              { val: "×3", label: "Рост узнаваемости бренда-спонсора в регионе (по данным опросов)", color: "text-gold" },
-              { val: "6+", label: "Лет проведения конкурса — устойчивая репутация события", color: "text-rose" },
-              { val: "100%", label: "Партнёров сезона 2025 готовы рекомендовать участие", color: "text-sage" },
+              { val: "20", label: "Бойцов из России и СНГ", color: "text-gold" },
+              { val: "7+", label: "Городов-участников по географии болельщиков", color: "text-rose" },
+              { val: "10М+", label: "Суммарный охват — подтверждённый результат", color: "text-terracotta" },
             ].map((s) => (
               <div key={s.label} className="p-5 border border-border text-center">
                 <p className={`font-serif text-3xl font-semibold mb-2 ${s.color}`}>{s.val}</p>
