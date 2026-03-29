@@ -35,9 +35,10 @@ export default function DeckSlidesIntro({ current }: Props) {
             <img
               src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/06567582-5289-4615-aa4e-3a2bad8ecec4.jpg"
               alt="Участницы конкурса"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-center brightness-[0.82] contrast-[1.05]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
           </div>
         </div>
       )}
