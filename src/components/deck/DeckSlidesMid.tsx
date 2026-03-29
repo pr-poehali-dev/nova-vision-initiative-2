@@ -218,6 +218,19 @@ export default function DeckSlidesMid({ current }: Props) {
             </div>
           </div>
 
+          {/* Фотогалерея */}
+          <div className="grid grid-cols-3 gap-3 mb-6">
+            {[
+              { url: "https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/30122446-ae3a-4b75-86d2-0b32468c33c4.jpg", alt: "Экран GENESIS PRO MMA 5" },
+              { url: "https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/3b723e61-697a-4b9e-9075-65b1c0930517.jpg", alt: "Победитель поединка" },
+              { url: "https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/dece3025-d1fe-41de-99a0-fe0bbf4a16db.jpg", alt: "Зрители в Огарев Арене" },
+            ].map((img) => (
+              <div key={img.alt} className="relative overflow-hidden aspect-video bg-foreground/10">
+                <img src={img.url} alt={img.alt} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+
           <div className="grid grid-cols-3 gap-4">
             {[
               { val: "20", label: "Бойцов из России и СНГ", color: "text-gold" },
