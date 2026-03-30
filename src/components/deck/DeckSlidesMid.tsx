@@ -245,11 +245,16 @@ export default function DeckSlidesMid({ current }: Props) {
       {/* Слайд 9 — Тайный артист */}
       {current === 8 && (
         <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-foreground" />
+          <div className="absolute inset-0">
+            <img
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/files/dca1efbc-0bd4-424b-b066-c4d6aebe2a0f.jpg"
+              alt="Артист на сцене"
+              className="w-full h-full object-cover blur-sm brightness-[0.35]"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/60" />
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
-          <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-rose/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl">
             <p className="text-[10px] tracking-[0.4em] uppercase text-gold/70 mb-8 font-semibold">Специальный гость вечера</p>
