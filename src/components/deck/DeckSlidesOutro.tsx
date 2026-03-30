@@ -141,9 +141,9 @@ export default function DeckSlidesOutro({ current }: Props) {
           </div>
           <div className="relative overflow-hidden hidden lg:block bg-foreground">
             <img
-              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/a87ea2bb-cfbb-4b0e-aa26-2eaab266cce6.jpg"
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/6659ae53-fb93-4d3c-893a-43959e1fd983.jpg"
               alt="Мероприятие"
-              className="w-full h-full object-cover object-top opacity-50 mix-blend-luminosity"
+              className="w-full h-full object-cover object-center opacity-60 mix-blend-luminosity"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
               <p className="font-serif text-4xl font-normal text-primary-foreground leading-[1.2] mb-4">«Быть рядом<br />со звёздным<br />событием»</p>
