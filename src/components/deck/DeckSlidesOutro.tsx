@@ -122,23 +122,19 @@ export default function DeckSlidesOutro({ current }: Props) {
             </div>
             <div className="flex gap-6">
               <div className="text-center">
-                <div className="w-36 h-36 overflow-hidden rounded-sm border border-border bg-white">
-                  <img
-                    src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/c34098d1-3463-458c-b9ed-3797035885af.jpg"
-                    alt="QR Telegram"
-                    className="w-full h-full object-cover scale-[1.35] object-center"
-                  />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/826afc7e-774e-4962-9c79-f0ecb103ea95.jpg"
+                  alt="QR Telegram"
+                  className="w-36 h-36 object-cover rounded-2xl"
+                />
                 <p className="text-[10px] uppercase tracking-widest text-muted-foreground mt-2">Telegram</p>
               </div>
               <div className="text-center">
-                <div className="w-36 h-36 overflow-hidden rounded-sm border border-border bg-white">
-                  <img
-                    src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/ca4c8373-b374-4264-8b6a-edcb9fe762c0.jpg"
-                    alt="QR WhatsApp"
-                    className="w-full h-full object-cover scale-[1.55] object-center"
-                  />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/26562d97-b2c5-4c38-9770-a6e35c37f86a.jpg"
+                  alt="QR WhatsApp"
+                  className="w-36 h-36 object-cover rounded-2xl"
+                />
                 <p className="text-[10px] uppercase tracking-widest text-muted-foreground mt-2">WhatsApp</p>
               </div>
             </div>
