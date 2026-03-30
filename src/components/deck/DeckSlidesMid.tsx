@@ -241,6 +241,53 @@ export default function DeckSlidesMid({ current }: Props) {
           </div>
         </div>
       )}
+
+      {/* Слайд 9 — Тайный артист */}
+      {current === 8 && (
+        <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-foreground" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+          <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-rose/5 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="relative z-10 max-w-2xl">
+            <p className="text-[10px] tracking-[0.4em] uppercase text-gold/70 mb-8 font-semibold">Специальный гость вечера</p>
+
+            <div className="mb-8 mx-auto w-24 h-24 rounded-full border border-gold/30 bg-gold/10 flex items-center justify-center">
+              <span className="text-4xl">🎤</span>
+            </div>
+
+            <h2 className="font-serif text-4xl md:text-5xl font-normal text-primary-foreground leading-[1.2] mb-6">
+              Тайный<br />
+              <span className="bg-gradient-to-r from-gold via-terracotta to-rose bg-clip-text text-transparent italic">
+                артист
+              </span>
+            </h2>
+
+            <p className="text-primary-foreground/60 text-base leading-relaxed mb-10 max-w-lg mx-auto">
+              В этот вечер на сцену Огарев Арены выйдет специальный гость — известный артист, чьё имя будет объявлено ближе к дате события. Живое выступление станет кульминацией шоу и привлечёт ещё больше гостей и медиавнимания.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {[
+                { label: "Дополнительный охват", val: "×2" },
+                { label: "Медиаупоминания", val: "+30%" },
+                { label: "Ажиотаж до события", val: "100%" },
+              ].map((s) => (
+                <div key={s.label} className="flex-1 border border-gold/20 bg-gold/5 px-6 py-5">
+                  <p className="font-serif text-3xl font-semibold text-gold mb-1">{s.val}</p>
+                  <p className="text-xs text-primary-foreground/50 uppercase tracking-widest">{s.label}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-10 text-xs text-primary-foreground/30 tracking-widest uppercase">
+              Имя артиста · Скоро
+            </p>
+          </div>
+        </div>
+      )}
     </>
   )
 }
