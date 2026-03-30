@@ -94,9 +94,9 @@ export default function DeckSlidesMid({ current }: Props) {
             ))}
           </div>
           <div className="mt-6 flex items-center gap-4 p-5 bg-terracotta/10 border border-terracotta/30">
-            <span className="text-2xl">⚡</span>
+            <span className="text-2xl">🤝</span>
             <p className="text-sm text-foreground">
-              <span className="font-medium">Ограниченное количество мест:</span> один спонсор на каждый уровень.
+              <span className="font-medium">Переговоры открыты прямо сейчас.</span> Чем раньше вы войдёте — тем больше точек касания с аудиторией до старта шоу.
             </p>
           </div>
         </div>
