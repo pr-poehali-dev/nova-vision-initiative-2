@@ -9,7 +9,8 @@ export default function DeckSlidesIntro({ current }: Props) {
       {current === 0 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">О мероприятии</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-2 font-semibold">Коммерческое предложение · 2026</p>
+            <p className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-6">О мероприятии</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
               Событие,<br />
               <span className="italic text-sage">которое запоминается</span>

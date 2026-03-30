@@ -95,23 +95,23 @@ export default function DeckSlidesOutro({ current }: Props) {
       {current === 10 && (
         <div className="h-full grid lg:grid-cols-2 overflow-hidden">
           <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Следующий шаг</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Связаться с нами</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
               Давайте<br />
               <span className="italic text-sage">познакомимся</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-10 max-w-md">
-              Готовы ответить на вопросы, провести переговоры и подготовить индивидуальное предложение под цели вашего бренда. Места ограничены.
+            <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
+              Готовы ответить на вопросы и подготовить индивидуальное предложение под цели вашего бренда.
             </p>
-            <div className="space-y-6">
+            <div className="space-y-5 mb-8">
               {[
-                { label: "Почта", val: "hello@krasavica2026.ru", href: "mailto:hello@krasavica2026.ru" },
-                { label: "Телефон", val: "+7 (834) 2XX-XX-XX", href: "tel:+78342000000" },
+                { label: "Почта", val: "saransk1641@bk.ru", href: "mailto:saransk1641@bk.ru" },
+                { label: "Телефон", val: "+7 902 668 35 40", href: "tel:+79026683540" },
                 { label: "Площадка", val: "Огарев Арена, Саранск", href: null },
                 { label: "Дата", val: "11 июля 2026", href: null },
               ].map((c) => (
-                <div key={c.label} className="flex gap-6 items-start border-b border-border/50 pb-5">
-                  <p className="text-xs tracking-widests uppercase text-muted-foreground w-20 shrink-0 pt-0.5">{c.label}</p>
+                <div key={c.label} className="flex gap-6 items-start border-b border-border/50 pb-4">
+                  <p className="text-xs tracking-widest uppercase text-muted-foreground w-20 shrink-0 pt-0.5">{c.label}</p>
                   {c.href ? (
                     <a href={c.href} className="text-foreground hover:text-sage transition-colors font-medium">{c.val}</a>
                   ) : (
@@ -120,15 +120,24 @@ export default function DeckSlidesOutro({ current }: Props) {
                 </div>
               ))}
             </div>
-            <a
-              href="/#contact"
-              className="mt-10 inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-sage to-sage/80 text-primary-foreground text-sm tracking-widest uppercase hover:opacity-90 transition-all shadow-lg shadow-sage/20 self-start"
-            >
-              Оставить заявку
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
+            <div className="flex gap-6">
+              <div className="text-center">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/c34098d1-3463-458c-b9ed-3797035885af.jpg"
+                  alt="QR Telegram"
+                  className="w-24 h-24 object-cover rounded-sm border border-border"
+                />
+                <p className="text-[10px] uppercase tracking-widest text-muted-foreground mt-2">Telegram</p>
+              </div>
+              <div className="text-center">
+                <img
+                  src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/ca4c8373-b374-4264-8b6a-edcb9fe762c0.jpg"
+                  alt="QR WhatsApp"
+                  className="w-24 h-24 object-cover rounded-sm border border-border"
+                />
+                <p className="text-[10px] uppercase tracking-widest text-muted-foreground mt-2">WhatsApp</p>
+              </div>
+            </div>
           </div>
           <div className="relative overflow-hidden hidden lg:block bg-foreground">
             <img
@@ -147,41 +156,41 @@ export default function DeckSlidesOutro({ current }: Props) {
       {/* Слайд 12 — CTA */}
       {current === 11 && (
         <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-foreground" />
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sage via-terracotta to-rose" />
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-rose via-terracotta to-sage" />
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-terracotta/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-indigo/10 rounded-full blur-3xl" />
+          {/* Фон — градиент от тёмного к тёплому */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1a0f0a] via-[#1f1108] to-[#0d0d14]" />
+          {/* Декоративные линии */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose/40 to-transparent" />
+          {/* Свечение */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-terracotta/8 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gold/6 rounded-full blur-3xl pointer-events-none" />
+
           <div className="relative z-10 max-w-3xl">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-primary-foreground/50 mb-8 font-semibold">Слоган события</p>
-            <h2 className="font-serif text-4xl md:text-6xl font-normal text-primary-foreground leading-[1.15] mb-8">
-              Красота.<br />
-              <span className="bg-gradient-to-r from-gold via-terracotta to-rose bg-clip-text text-transparent">
-                Город. Вы.
+            {/* Декоративный разделитель */}
+            <div className="flex items-center justify-center gap-4 mb-10">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/50" />
+              <span className="text-gold/60 text-xs tracking-[0.4em] uppercase">Саранск · 2026</span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/50" />
+            </div>
+
+            <h2 className="font-serif text-5xl md:text-7xl font-normal leading-[1.1] mb-6">
+              <span className="text-white/90">Красота.</span><br />
+              <span className="text-white/90">Город.</span>{" "}
+              <span className="bg-gradient-to-r from-gold via-[#e8a87c] to-rose bg-clip-text text-transparent italic">
+                Ваш бренд.
               </span>
             </h2>
-            <p className="text-xl text-primary-foreground/70 mb-4 max-w-xl mx-auto leading-relaxed">
-              Станьте частью главного события Саранска — и пусть тысячи гостей узнают о вашем бренде в самую праздничную ночь года.
+
+            <p className="text-white/50 text-base leading-relaxed max-w-lg mx-auto mb-10">
+              Присоединяйтесь к главному событию Мордовии — пусть тысячи гостей запомнят вас этим вечером.
             </p>
-            <p className="text-sm text-primary-foreground/50 tracking-widest uppercase mb-12">
-              11 июля 2026 · Огарев Арена · Саранск
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/#contact"
-                className="inline-flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-terracotta to-rose text-white text-sm tracking-widest uppercase hover:opacity-90 transition-all shadow-xl shadow-terracotta/30"
-              >
-                Стать партнёром
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center gap-2 px-10 py-4 text-sm tracking-widest uppercase text-primary-foreground/60 hover:text-primary-foreground border border-primary-foreground/20 hover:border-primary-foreground/50 transition-all"
-              >
-                На главную
-              </a>
+
+            <div className="flex items-center justify-center gap-3 text-white/30 text-xs tracking-[0.3em] uppercase">
+              <span>11 июля 2026</span>
+              <span className="text-gold/40">·</span>
+              <span>Огарев Арена</span>
+              <span className="text-gold/40">·</span>
+              <span>Саранск</span>
             </div>
           </div>
         </div>
