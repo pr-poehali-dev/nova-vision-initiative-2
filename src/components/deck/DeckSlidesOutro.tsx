@@ -69,7 +69,7 @@ export default function DeckSlidesOutro({ current }: Props) {
             <div className="space-y-4">
               <p className="text-xs tracking-widests uppercase text-muted-foreground mb-5">Стоимость контакта vs альтернативы</p>
               {[
-                { label: "Спонсорство «Красавица города»", cpm: "5 ₽", highlight: true },
+                { label: "Спонсорство «Саранская красавица 2026»", cpm: "5 ₽", highlight: true },
                 { label: "Таргетированная реклама ВК", cpm: "12–20 ₽", highlight: false },
                 { label: "Наружная реклама (билборд/мес.)", cpm: "15–30 ₽", highlight: false },
                 { label: "ТВ-реклама регион (30 сек)", cpm: "30–60 ₽", highlight: false },
@@ -147,7 +147,7 @@ export default function DeckSlidesOutro({ current }: Props) {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
               <p className="font-serif text-4xl font-normal text-primary-foreground leading-[1.2] mb-4">«Быть рядом<br />со звёздным<br />событием»</p>
-              <p className="text-primary-foreground/60 text-sm tracking-widest uppercase">Красавица города 2026</p>
+              <p className="text-primary-foreground/60 text-sm tracking-widest uppercase">Саранская красавица 2026</p>
             </div>
           </div>
         </div>
