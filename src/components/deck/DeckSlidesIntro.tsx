@@ -7,22 +7,15 @@ export default function DeckSlidesIntro({ current }: Props) {
     <>
       {/* Слайд 1 — О событии */}
       {current === 0 && (
-        <div className="h-full relative overflow-hidden">
-          <img
-            src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/968aab6f-b8ca-4bc4-b2f2-a611fb779f9f.jpg"
-            alt="Победительница конкурса"
-            className="absolute inset-0 w-full h-full object-contain object-center bg-black"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          <div className="relative h-full flex flex-col justify-center px-12 lg:px-16 py-10 max-w-xl">
+        <div className="h-full grid lg:grid-cols-2 overflow-hidden">
+          <div className="flex flex-col justify-center px-12 lg:px-16 py-10">
             <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-2 font-semibold">Коммерческое предложение · 2026</p>
-            <p className="text-[10px] tracking-[0.25em] uppercase text-white/60 mb-6">О мероприятии</p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2] text-white">
+            <p className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-6">О мероприятии</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-8 leading-[1.2]">
               Событие,<br />
               <span className="italic text-sage">которое запоминается</span>
             </h2>
-            <div className="space-y-5 text-white/70 leading-relaxed">
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>«Саранская красавица 2026» — ежегодный конкурс красоты и таланта, главное культурное событие Республики Мордовия. 13 финалисток соревнуются за титул символа Саранска.</p>
               <p>Мероприятие объединяет бизнес-элиту, медиа и самую активную аудиторию региона в торжественной атмосфере Огарев Арены.</p>
             </div>
@@ -33,11 +26,18 @@ export default function DeckSlidesIntro({ current }: Props) {
                 { val: "3", label: "Года мероприятию" },
               ].map((s) => (
                 <div key={s.label} className="border-l-2 border-terracotta pl-4">
-                  <p className="font-serif text-2xl font-semibold text-white">{s.val}</p>
-                  <p className="text-[10px] tracking-[0.25em] uppercase text-white/50 mt-1">{s.label}</p>
+                  <p className="font-serif text-2xl font-semibold text-foreground">{s.val}</p>
+                  <p className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground mt-1">{s.label}</p>
                 </div>
               ))}
             </div>
+          </div>
+          <div className="hidden lg:flex items-center justify-center bg-white py-6 pr-6">
+            <img
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/2cbdfaa5-6a1a-44d8-986e-2760d6e22d96.jpg"
+              alt="Победительница конкурса"
+              className="h-full max-h-full w-auto object-contain object-center"
+            />
           </div>
         </div>
       )}
