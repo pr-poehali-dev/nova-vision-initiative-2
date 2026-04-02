@@ -32,12 +32,14 @@ export default function DeckSlidesIntro({ current }: Props) {
               ))}
             </div>
           </div>
-          <div className="hidden lg:flex items-center justify-center bg-white py-6 pr-6">
+          <div className="relative overflow-hidden hidden lg:block">
             <img
-              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/2cbdfaa5-6a1a-44d8-986e-2760d6e22d96.jpg"
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/968aab6f-b8ca-4bc4-b2f2-a611fb779f9f.jpg"
               alt="Победительница конкурса"
-              className="h-full max-h-full w-auto object-contain object-center"
+              className="w-full h-full object-cover object-[center_15%] brightness-[0.88] contrast-[1.05]"
             />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
           </div>
         </div>
       )}
