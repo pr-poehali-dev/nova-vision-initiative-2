@@ -163,8 +163,8 @@ export default function DeckSlidesMid({ current }: Props) {
               <p className="text-xs tracking-widest uppercase text-primary-foreground/50 mb-6">Результаты мероприятия</p>
               <div className="grid grid-cols-2 gap-6 mb-6">
                 {[
-                  { val: "2 000+", label: "Зрителей в зале" },
-                  { val: "1 500+", label: "Продано билетов" },
+                  { val: "3 000+", label: "Зрителей в зале" },
+                  { val: "2 000+", label: "Продано билетов" },
                   { val: "25 000+", label: "Онлайн-трансляция" },
                   { val: "12", label: "Профессиональных боёв" },
                 ].map((s) => (
@@ -176,7 +176,7 @@ export default function DeckSlidesMid({ current }: Props) {
               </div>
               <div className="border-t border-primary-foreground/20 pt-5">
                 <p className="text-xs text-primary-foreground/50 uppercase tracking-widest mb-2">Совокупный охват</p>
-                <p className="font-serif text-4xl font-semibold text-terracotta">100 000+</p>
+                <p className="font-serif text-4xl font-semibold text-terracotta">170 000+</p>
                 <p className="text-xs text-primary-foreground/40 mt-1">совокупный охват во всех каналах</p>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function DeckSlidesMid({ current }: Props) {
             {[
               { val: "20", label: "Бойцов из России и СНГ", color: "text-gold" },
               { val: "7+", label: "Городов-участников по географии болельщиков", color: "text-rose" },
-              { val: "100 000+", label: "Суммарный охват — подтверждённый результат", color: "text-terracotta" },
+              { val: "170 000+", label: "Суммарный охват — подтверждённый результат", color: "text-terracotta" },
             ].map((s) => (
               <div key={s.label} className="p-5 border border-border text-center">
                 <p className={`font-serif text-3xl font-semibold mb-2 ${s.color}`}>{s.val}</p>

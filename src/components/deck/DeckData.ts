@@ -1,7 +1,7 @@
 export const packages = [
   {
     level: "Генеральный партнёр",
-    price: "500 000 ₽+",
+    price: "4 000 000 ₽+",
     color: "from-gold to-terracotta",
     textColor: "text-gold",
     perks: [
@@ -18,7 +18,7 @@ export const packages = [
   },
   {
     level: "Титульный партнёр",
-    price: "450 000 ₽",
+    price: "4 000 000 ₽",
     color: "from-rose to-indigo",
     textColor: "text-rose",
     perks: [
@@ -33,7 +33,7 @@ export const packages = [
   },
   {
     level: "Официальный партнёр",
-    price: "350 000 ₽",
+    price: "3 000 000 ₽",
     color: "from-sage to-indigo",
     textColor: "text-sage",
     perks: [
@@ -48,7 +48,7 @@ export const packages = [
   },
   {
     level: "Информационный партнёр",
-    price: "300 000 ₽",
+    price: "2 000 000 ₽",
     color: "from-stone to-stone/50",
     textColor: "text-muted-foreground",
     perks: [
