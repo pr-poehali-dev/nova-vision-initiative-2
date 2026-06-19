@@ -26,7 +26,7 @@ export default function DeckSlidesIntro({ current }: Props) {
                 { val: "3", label: "Года мероприятию" },
               ].map((s) => (
                 <div key={s.label} className="border-l-2 border-terracotta pl-4">
-                  <p className="font-serif text-2xl font-semibold text-foreground">{s.val}</p>
+                  <p className="font-serif text-2xl font-semibold text-foreground text-left">{s.val}</p>
                   <p className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground mt-1">{s.label}</p>
                 </div>
               ))}
