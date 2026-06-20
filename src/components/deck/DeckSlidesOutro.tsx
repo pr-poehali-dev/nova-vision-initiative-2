@@ -141,9 +141,9 @@ export default function DeckSlidesOutro({ current }: Props) {
           </div>
           <div className="relative overflow-hidden hidden lg:block bg-foreground">
             <img
-              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/4921460a-a81c-486e-98e5-6a104c0480be.jpeg"
-              alt="Победительница конкурса"
-              className="w-full h-full object-cover object-top brightness-[0.45]"
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/2357ebe9-788f-4fdb-944d-6b7ba227dad5.jpeg"
+              alt="Зал мероприятия"
+              className="w-full h-full object-cover object-center brightness-[0.45]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
