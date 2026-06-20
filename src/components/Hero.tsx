@@ -30,7 +30,7 @@ export function Hero() {
         <div className="inline-flex items-center gap-3 px-6 py-2.5 mb-12 border border-terracotta/30 bg-terracotta/8">
           <span className="w-2 h-2 rounded-full bg-terracotta animate-pulse" />
           <p className="text-sm text-terracotta tracking-widest uppercase font-medium">
-            11 июля 2026 · Огарев Арена · Саранск
+            19 сентября 2026 · Огарев Арена · Саранск
           </p>
         </div>
 

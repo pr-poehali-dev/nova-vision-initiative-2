@@ -71,8 +71,8 @@ export function Philosophy() {
                   <div className="w-px h-12 bg-terracotta mt-1 shrink-0" />
                   <div>
                     <p className="text-xs tracking-widest uppercase text-muted-foreground mb-1">Дата проведения</p>
-                    <p className="font-serif text-xl text-foreground">11 июля 2026 года</p>
-                    <p className="text-muted-foreground text-sm mt-1">Летний вечер в самом сердце города — максимальная посещаемость и праздничная атмосфера.</p>
+                    <p className="font-serif text-xl text-foreground">19 сентября 2026 года</p>
+                    <p className="text-muted-foreground text-sm mt-1">Осенний вечер в самом сердце города — максимальная посещаемость и праздничная атмосфера.</p>
                   </div>
                 </div>
               </div>
