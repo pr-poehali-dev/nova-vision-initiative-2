@@ -12,7 +12,7 @@ export default function DeckSlidesOutro({ current }: Props) {
         <div className="h-full flex flex-col justify-center px-12 lg:px-20 py-10 overflow-y-auto">
           <p className="text-[10px] tracking-[0.35em] uppercase text-terracotta mb-6 font-semibold">Расписание и таймлайн</p>
           <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-10 leading-[1.2]">
-            Путь к <span className="italic text-sage">11 июля</span>
+            Путь к <span className="italic text-sage">19 сентября</span>
           </h2>
           <div className="relative">
             <div className="absolute left-[7.5rem] top-0 bottom-0 w-px bg-gradient-to-b from-terracotta via-rose to-indigo hidden md:block" />
@@ -108,7 +108,7 @@ export default function DeckSlidesOutro({ current }: Props) {
                 { label: "Почта", val: "saransk1641@bk.ru", href: "mailto:saransk1641@bk.ru" },
                 { label: "Телефон", val: "+7 902 668 35 40", href: "tel:+79026683540" },
                 { label: "Площадка", val: "Огарев Арена, Саранск", href: null },
-                { label: "Дата", val: "11 июля 2026", href: null },
+                { label: "Дата", val: "19 сентября 2026", href: null },
               ].map((c) => (
                 <div key={c.label} className="flex gap-6 items-start border-b border-border/50 pb-4">
                   <p className="text-xs tracking-widest uppercase text-muted-foreground w-20 shrink-0 pt-0.5">{c.label}</p>
