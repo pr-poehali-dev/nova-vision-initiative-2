@@ -156,8 +156,10 @@ export default function DeckSlidesOutro({ current }: Props) {
       {/* Слайд 12 — CTA */}
       {current === 11 && (
         <div className="h-full flex flex-col items-center justify-center px-8 text-center relative overflow-hidden">
-          {/* Фон — градиент от тёмного к тёплому */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a0f0a] via-[#1f1108] to-[#0d0d14]" />
+          {/* Фон — фото зала */}
+          <div className="absolute inset-0">
+            <img src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/3c6be4e8-76c6-49b2-88e8-983f834ba3f0.jpeg" alt="Атмосфера мероприятия" className="w-full h-full object-cover brightness-[0.35]" />
+          </div>
           {/* Декоративные линии */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rose/40 to-transparent" />
