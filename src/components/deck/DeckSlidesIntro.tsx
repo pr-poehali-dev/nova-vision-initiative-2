@@ -22,7 +22,7 @@ export default function DeckSlidesIntro({ current }: Props) {
             <div className="mt-10 grid grid-cols-3 gap-6">
               {[
                 { val: "13", label: "Финалисток" },
-                { val: "5 000+", label: "Гостей в зале" },
+                { val: "3 000+", label: "Гостей в зале" },
                 { val: "3", label: "Года мероприятию" },
               ].map((s) => (
                 <div key={s.label} className="border-l-2 border-terracotta pl-4">
@@ -54,7 +54,7 @@ export default function DeckSlidesIntro({ current }: Props) {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
               { val: "150 000+", label: "Совокупный охват", desc: "Соцсети и региональные СМИ", color: "border-rose" },
-              { val: "5 000+", label: "Гостей в зале", desc: "Живая аудитория 19 сентября", color: "border-gold" },
+              { val: "3 000+", label: "Гостей в зале", desc: "Живая аудитория 19 сентября", color: "border-gold" },
               { val: "18–55", label: "Возраст аудитории", desc: "Мужчины и женщины", color: "border-sage" },
               { val: "60%", label: "Женщины", desc: "Ключевой демографический срез", color: "border-indigo" },
             ].map((m) => (
