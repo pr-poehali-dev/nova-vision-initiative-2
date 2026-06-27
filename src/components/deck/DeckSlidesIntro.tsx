@@ -34,9 +34,9 @@ export default function DeckSlidesIntro({ current }: Props) {
           </div>
           <div className="relative overflow-hidden hidden lg:block">
             <img
-              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/968aab6f-b8ca-4bc4-b2f2-a611fb779f9f.jpg"
+              src="https://cdn.poehali.dev/projects/d03f091f-8aab-4cf7-98f1-c0c33f947ea5/bucket/0c027611-85ab-416e-b97a-a7e52e4db8bc.jpg"
               alt="Победительница конкурса"
-              className="w-full h-full object-contain object-center brightness-[0.88] contrast-[1.05]"
+              className="w-full h-full object-cover object-top brightness-[0.88] contrast-[1.05]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/10 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
